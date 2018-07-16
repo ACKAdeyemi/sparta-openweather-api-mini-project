@@ -24,4 +24,36 @@ class SingleCityWeather
     @city['weather']
   end
 
+  def get_visibility
+    @city['visibility']
+  end
+
+  def get_name
+    @city['name']
+  end
+
+  def get_weather_id
+    @city['weather'].first['id']
+  end
+
+  def get_weather_description
+    @city['weather'][0]['description']
+  end
+
+  def check_wind
+    @city['wind']
+  end
+
+  def check_main_temp
+    @city['main']['temp']
+  end
+
+  def get_base
+    @city['base']
+  end
+
+  def get_coord
+    @city['coord']
+  end
+
 end

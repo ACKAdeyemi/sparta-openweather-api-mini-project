@@ -4,12 +4,12 @@ require_relative 'services/uv_index_service.rb'
 
 class OpenweatherAPI
 
-  def air_pollution
-    AirPollution.new
-  end
-
   def single_city_weather
     SingleCityWeather.new
+  end
+
+  def air_pollution
+    AirPollution.new
   end
 
   def uv_index
@@ -21,7 +21,7 @@ end
 # test by running 'ruby lib/OpenweatherAPI.rb'
 superClass = OpenweatherAPI.new
 
-# ==== FIRST SERVICE  ====
+# ==== INITIAL SERVICE  ====
 city = superClass.single_city_weather
 
 city.get_response
