@@ -18,23 +18,23 @@ class OpenweatherAPI
 
 end
 
-# test by running 'ruby lib/OpenweatherAPI.rb'
+# # test by running 'ruby lib/OpenweatherAPI.rb'
 superClass = OpenweatherAPI.new
-
-# ==== INITIAL SERVICE  ====
-city = superClass.single_city_weather
-
-city.get_response
-city.print_result
-
-# ==== SECOND SERVICE ====
+#
+# # ==== INITIAL SERVICE  ====
+# city = superClass.single_city_weather
+#
+# city.get_response
+# city.print_result
+#
+# # ==== SECOND SERVICE ====
 location = superClass.air_pollution
 
 location.get_response
 location.print_result
-
-# ==== THIRD SERVICE ====
-location = superClass.uv_index
-
-location.get_response
-location.print_result
+#
+# # ==== THIRD SERVICE ====
+# location = superClass.uv_index
+#
+# location.get_response
+# location.print_result

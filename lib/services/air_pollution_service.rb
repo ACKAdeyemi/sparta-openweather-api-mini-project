@@ -12,7 +12,7 @@ class AirPollution
   end
 
   def get_response
-    @location = self.class.get("/0.0,10.0/current.json?appid=#{@api_key}")
+    @location = JSON.parse(self.class.get("/0.0,10.0/current.json?appid=#{@api_key}").body)
   end
 
   def print_result
