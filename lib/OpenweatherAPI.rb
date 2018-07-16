@@ -1,4 +1,6 @@
 require_relative 'services/single_city_weather_service.rb'
+require_relative 'services/air_pollution_service.rb'
+require_relative 'services/uv_index_service.rb'
 
 class OpenweatherAPI
 
@@ -6,13 +8,12 @@ class OpenweatherAPI
     SingleCityWeather.new
   end
 
+  def air_pollution
+    AirPollution.new
+  end
+
+  def uv_index
+    UVIndex.new
+  end
+
 end
-
-# superClass = OpenweatherAPI.new
-#
-# city = superClass.single_city_weather
-#
-# city.get_response
-# city.print_result
-
-# city.print_result
