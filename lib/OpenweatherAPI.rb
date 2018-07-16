@@ -28,13 +28,13 @@ superClass = OpenweatherAPI.new
 # city.print_result
 #
 # # ==== SECOND SERVICE ====
-location = superClass.air_pollution
-
-location.get_response
-location.print_result
-#
-# # ==== THIRD SERVICE ====
-# location = superClass.uv_index
+# location = superClass.air_pollution
 #
 # location.get_response
 # location.print_result
+#
+# # ==== THIRD SERVICE ====
+location = superClass.uv_index
+
+location.get_response
+location.print_result

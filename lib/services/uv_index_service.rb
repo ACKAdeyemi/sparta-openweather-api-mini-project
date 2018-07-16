@@ -19,4 +19,24 @@ class UVIndex
     puts "UV INDEX: #{@location}"
   end
 
+  def check_lat
+    @location['lat']
+  end
+
+  def check_lon
+    @location['lon']
+  end
+
+  def get_date_iso
+    @location['date_iso']
+  end
+
+  def get_date
+    @location['date']
+  end
+
+  def check_value
+    @location['value']
+  end
+
 end
