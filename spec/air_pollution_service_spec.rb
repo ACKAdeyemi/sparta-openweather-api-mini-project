@@ -15,7 +15,6 @@ describe 'OpenWeather API test' do
 
     it "should have 3 keys" do
       expect(@location.get_response.keys.length).to eq 3
-      # p @location.get_response.keys
     end
 
     it "should contain a key called data" do
@@ -43,7 +42,6 @@ describe 'OpenWeather API test' do
       expect(@location.get_data.length).to eq 37
       expect(@location.get_data.length).to_not be_between(0,36)
       expect(@location.get_data.length).to_not be > 37
-      # p @location.get_data.length
     end
 
     it "should return a pressure value of 1000 for the first Data array item" do
@@ -56,27 +54,22 @@ describe 'OpenWeather API test' do
 
     it "should return the location hash with a key called latitude" do
       expect(@location.check_location).to include('latitude')
-      # p @location.check_location
     end
 
     it "should return the location's latitude as a float" do
       expect(@location.check_location_lat).to be_a Float
-      # p @location.check_location_lat
     end
 
     it "should return the location's latitude as 0 at the least" do
       expect(@location.check_location_lat).to be >= 0
-      # p @location.check_location_lat
     end
 
     it "should return the location's longtitude as a float" do
       expect(@location.check_location_lon).to be_a Float
-      # p @location.check_location_lon
     end
 
     it "should return the location's longtitude as 0 at the least" do
       expect(@location.check_location_lon).to be >= 0
-      # p @location.check_location_lon
     end
 
   end

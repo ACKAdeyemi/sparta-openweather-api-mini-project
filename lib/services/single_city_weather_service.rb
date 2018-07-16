@@ -12,7 +12,6 @@ class SingleCityWeather
   end
 
   def get_response
-    # city = Faker::Address.city
     @city = JSON.parse(self.class.get("london&appid=#{@api_key}").body)
   end
 

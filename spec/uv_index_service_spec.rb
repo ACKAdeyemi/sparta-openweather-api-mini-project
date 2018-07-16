@@ -11,7 +11,6 @@ describe 'OpenWeather API test' do
 
     it "should return the API response as a hash" do
       expect(@location.get_response).to be_a Hash
-      # p @location.get_response.class
     end
 
     it "should have 5 keys" do
