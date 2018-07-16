@@ -19,6 +19,22 @@ class AirPollution
     puts "AIR POLLUTION: #{@location}"
   end
 
+  def check_location
+    @location['location']
+  end
+
+  def check_location_lat
+    @location['location']['latitude'].to_f
+  end
+
+  def check_location_lon
+    @location['location']['longtitude'].to_f
+  end
+
+  def get_time
+    @location['time']
+  end
+
   def get_data
     @location['data']
   end
