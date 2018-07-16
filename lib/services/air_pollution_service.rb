@@ -8,7 +8,7 @@ class AirPollution
   base_uri 'api.openweathermap.org/pollution/v1/co'
 
   def initialize
-    @api_key = '63be7cd83610459315f240a4bd60688b' #add you API key here
+    @api_key = '63be7cd83610459315f240a4bd60688b' #add your API key here
   end
 
   def get_response
@@ -16,7 +16,7 @@ class AirPollution
   end
 
   def print_result
-    puts @location
+    puts "AIR POLLUTION: #{@location}"
   end
 
   def get_data

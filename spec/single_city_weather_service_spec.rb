@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'OpenWeather API test' do
 
-  context 'testing the single city weather service ' do
+  context 'testing the Single City Weather service ' do
 
     before(:all) do
       @city = OpenweatherAPI.new.single_city_weather

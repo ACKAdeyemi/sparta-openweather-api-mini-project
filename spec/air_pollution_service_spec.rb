@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'OpenWeather API test' do
 
-  context 'testing the air pollution service' do
+  context 'testing the Air Pollution service' do
 
     before(:all) do
       @location = OpenweatherAPI.new.air_pollution
